@@ -1,31 +1,31 @@
-import React from 'react'
-import cities from './Cities.js'
-import './CityArray.css'
+import React, { useState } from 'react';
+import cities from './Cities';
+import './CityArray.css';
+import CityDetails from './CityDetails';
 
 function cityArray() {
+  const [selectedCity, setSelectedCity] = useState(null);
+
+  const handleCityDetailsClick = (city) => {
+    setSelectedCity(city);
+  };
 
   return (
-
-    <div className= "city-container">
-      {cities.map(city => (
-        <div>
-          <ul>
-            <div className= "city-card" key={city.id}>
+    <div className="city-container">
+      {cities.map((city) => (
+        <div className="city-card" key={city.id}>
           <h2>{city.name}</h2>
-          <div className= "city-details">
-          {/*<p>Population of {city.name} is: {city.population}</p>*/}
-          <p>Train Access: {city.trainAccess ? `Yes, ${city.trainAccess}` : 'No'}</p>
+          <div className="city-details">
+            <p>Train Access: {city.trainAccess ? `Yes, ${city.trainAccess}` : 'No'}</p>
           </div>
-          <img src = {city.url} className= 'city-image'/>
-          
-          <button>More Details</button>
-          </div>
-          </ul>
+          <img src={city.url} className="city-image" alt={city.name} />
+          <button onClick={() => handleCityDetailsClick(city)}>More Details</button>
         </div>
       ))}
+
+      {selectedCity && <CityDetails city={selectedCity} />}
     </div>
   );
-};
-
+}
 
 export default cityArray;

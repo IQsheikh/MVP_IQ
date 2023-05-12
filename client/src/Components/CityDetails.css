@@ -1,0 +1,27 @@
+.city-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .city-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9e9797;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .city-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    align-items: center;
+  }
+  
+  .city-details {
+    margin-top: 30px;
+    text-align: center;
+    -webkit-text-fill-color: rgb(237, 248, 248);
+  }
