@@ -43,21 +43,24 @@ import React, { useState } from 'react';
 import cities from './Cities';
 import './CityArray.css';
 import CityDetails from './CityDetails';
+import { useNavigate } from 'react-router-dom';
 import SeasonDetails from './SeasonalActivities'
 
 function cityArray(city) {
-  const [selectedCity, setSelectedCity] = useState(null);
-  const [reset, setReset] = useState(true);
+
+  const navigate = useNavigate ();
+  //const [selectedCity, setSelectedCity] = useState(null);
+  //const [reset, setReset] = useState(true);
 
 
   const handleCityDetailsClick = (city) => {
-    setSelectedCity(city);
+   // setSelectedCity(city);
     navigate(`/city/${city.id}`);
   };
 
-  const handleResetCB = () => {
-    setReset(false);
-  };
+ // const handleResetCB = () => {
+    //setReset(false);
+ // };
 
   return (
     <div className="city-container">
@@ -74,7 +77,7 @@ function cityArray(city) {
        </div>
       ))};
 
-      {selectedCity && <CityDetails city={selectedCity} handleResetCB={() => handleResetCB(false)}/>} 
+    {/* {selectedCity && <CityDetails city={selectedCity} handleResetCB={() => handleResetCB(false)}/>} */}
       
 
 

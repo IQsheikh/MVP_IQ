@@ -126,31 +126,41 @@ export default CityDetails;
 */
 
 
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+
+/*
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import SeasonDetails from './SeasonalActivities';
+import cities from './Cities';
 
 
-function CityDetails({ city }) {
-  const history = useNavigate();
+function CityDetails() {
+  const [city, setCity] = useState ({});
   const [selectedSeason, setSelectedSeason] = useState(null);
+  let {id} = useParams();
+
+  useEffect(() => {
+    loadCityDetails();
+  }, [])
+
+  const loadCityDetails = () => {
+    let cityByID = cities.filter (city => city.id === Number(id));
+    setCity(cityByID[0]);
+  };
 
   const handleSeasonChange = (event) => {
     setSelectedSeason(event.target.value);
-    navigate(`/city/${city.id}/${event.target.value}`);
-  };
- 
-  const handlePageReset = (event) => {
-    setSelectedSeason(null);
   };
 
 
   return (
     <div className="city-card">
-      <h2>{city.name}</h2>
-      <p>Province: {city.province}</p>
+      <h2>"When will you visit {city.name}?</h2>
+      
+     {/*} <p>Province: {city.province}</p>
       <p>Language: {city.language}</p>
-      <p>Population: {city.population}</p>
+  <p>Population: {city.population}</p> */
+  /*
       {!selectedSeason ? (
         <div>
           <label htmlFor="season-dropdown">Select a Season:</label>
@@ -161,6 +171,66 @@ function CityDetails({ city }) {
             <option value="spring">Spring</option>
             <option value="autumn">Autumn</option>
           </select>
+          <img src={city.url} className="city-image" alt={city.name} />
+        </div>
+      ) : (
+        <SeasonDetails city={city} season={selectedSeason} />
+      )}
+    </div>
+  );
+}
+
+export default CityDetails;
+
+*/
+
+
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import SeasonDetails from './SeasonalActivities';
+import cities from './Cities';
+
+function CityDetails() {
+  const [city, setCity] = useState({});
+  const [selectedSeason, setSelectedSeason] = useState(null);
+  const { id } = useParams();
+  const [isFirstPage, setIsFirstPage] = useState(true);
+
+  useEffect(() => {
+    loadCityDetails();
+  }, );
+
+  const loadCityDetails = () => {
+    const cityByID = cities.filter((city) => city.id === Number(id));
+    setCity(cityByID[0]);
+  };
+
+  const handleSeasonChange = (event) => {
+    setSelectedSeason(event.target.value);
+    setIsFirstPage(false);
+  };
+
+  return (
+    <div className="city-card">
+      {isFirstPage && city.name && <h2>"When will you visit {city.name}?"</h2>}
+      {!selectedSeason ? (
+        <div>
+          {isFirstPage && city.name && (
+            <>
+              <p>Province: {city.province}</p>
+              <p>Language: {city.language}</p>
+              <p>Population: {city.population}</p>
+            </>
+          )}
+          <label htmlFor="season-dropdown">Select a Season:</label>
+          <select id="season-dropdown" onChange={handleSeasonChange}>
+            <option value="">-- Select Season --</option>
+            <option value="winter">Winter</option>
+            <option value="summer">Summer</option>
+            <option value="spring">Spring</option>
+            <option value="autumn">Autumn</option>
+          </select>
+          {isFirstPage && city.name && <img src={city.url} className="city-image" alt={city.name} />}
         </div>
       ) : (
         <SeasonDetails city={city} season={selectedSeason} />

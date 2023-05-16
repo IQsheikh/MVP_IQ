@@ -4,7 +4,6 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import CityArray from './Components/CityArray.jsx'
 import CityDetails from './Components/CityDetails.jsx';
-import CityDetailsPage from './Components/CityDetailsPage';
 
 //import { BrowserRouter as Router, Route} from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -14,7 +13,7 @@ function App() {
   
       <Routes>
        <Route path="/" element={<CityArray/>} />
-       <Route path="/city/:id/:season" element={<CityDetailsPage/>} />
+       <Route path="/city/:id/" element={<CityDetails/>} />
       </Routes>
   );
 }

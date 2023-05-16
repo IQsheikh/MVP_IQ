@@ -1,0 +1,34 @@
+/*
+
+.heading {
+    display: inline;
+  }
+  
+  .season-name {
+    font-weight: bold;
+  }
+
+  .city-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9e9797;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .image-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  */

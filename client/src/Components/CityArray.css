@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #9e9797;
+    background-color: #636262;
     padding: 10px;
     border-radius: 4px;
   }
@@ -25,3 +25,22 @@
     text-align: center;
     -webkit-text-fill-color: rgb(237, 248, 248);
   }
+
+  
+  body {
+    position: relative;
+  }
+  
+  body::before {
+    content: "";
+    background: url(https://wallpapercave.com/wp/wp2359194.jpg) no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+    z-index: -1;
+  }
+  
