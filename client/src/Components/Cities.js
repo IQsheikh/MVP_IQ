@@ -33,10 +33,10 @@ const cities = [
         ],
       },
 
-      winter: "Christmas Market, Antwerpen Central Station, MAS",
-      summer: "Antwerpen Central Station, Antwerpen Zoo, Het Steen",
-      spring: "De Meir, St Anna's Tunnel, Het Steen",
-      autumn: "Reubens Huis, Red Star Line Museum, Stadsfeestzaal",
+      winter: "Enjoy at Christmas Market, See the Antwerpen Central Station, Explore in the MAS",
+      summer: "See the Antwerpen Central Station, visit Antwerpen Zoo, Stroll to Het Steen",
+      spring: "Shop at De Meir, See the historic St Anna's Tunnel, Walk at Het Steen",
+      autumn: "Visit Reubens Huis, See Red Star Line Museum, Relax at Stadsfeestzaal",
       url: "https://th.bing.com/th/id/R.fd8967ad642c4000ef3e74aaf3b7ab72?rik=L0VpseWOC5RDRA&pid=ImgRaw&r=0"
     },
 
@@ -75,10 +75,10 @@ const cities = [
                 ],
               },
 
-      winter: "Christmas Market, Bright Brussels, Atomium",
-      summer: "Art & History Museum, Royal Palace, Manekken Pis, Mini Europe",
-      spring: "Royal Greenhouses of Laeken, Hallerbos, Flower cartpet at Grand Place",
-      autumn: "Planetarium, Cathedral of St. Michael & st. Gudula, Sonian Forest",
+      winter: "See the Christmas Market, Visit Bright Brussels, Go to The Atomium",
+      summer: "Visit Art & History Museum, Go inside the Royal Palace, See Manekken Pis, Visit Mini Europe",
+      spring: "See Royal Greenhouses of Laeken, Visit Hallerbos, Photograph the Flower cartpet at Grand Place",
+      autumn: "Go to Planetarium, Visit Cathedral of St. Michael & st. Gudula, Visit the Sonian Forest",
       url: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Grand_Place_Brussels_Belgium_Travel_Europe.jpg"
     },
 
@@ -122,10 +122,10 @@ const cities = [
                },
       
 
-      winter: "Christmas Market, Shopping Street, Gruuthuse Museum, Brugge Light Show",
-      summer: "Boat Tours, Horse and Carriage Tours, Historic Center",
-      spring: "Tulips, Boat tours, Belfry of Bruges",
-      autumn: "Autumn in Brugge, Basilica of the Holy Blood, Bruges canals in Autumn",
+      winter: "Visit the Christmas Market, Buy Chocoates at shopping street, Go to the Gruuthuse Museum, See Brugge light show",
+      summer: "Take a boat Tour, Try Horse and Carriage tours, See the Historic Center",
+      spring: "See the Tulips, Take Boat tours, visit the Belfry of Bruges",
+      autumn: "See autumn in Brugge, Go to Basilica of the Holy Blood, See the Bruges canals in Autumn",
       url: "https://img.itinari.com/pages/images/original/4dcc61ee-da31-49d6-8b3d-bf86d024a75b-istock-535490789.jpg?ch=DPR&dpr=1.25&w=1600&s=417afb129b48d5131acce5094df23736"
     },
     {
@@ -164,10 +164,10 @@ const cities = [
                  ],
                },
 
-      winter: "Christmas Market, Maison Leffe, Citadel of Dinant",
-      summer: "Boat Tours, Water Taxi, Charles De Gaulle Bridge, Castle Veves",
+      winter: " Visit the Christmas Market, See Maison Leffe, Tour the Citadel of Dinant",
+      summer: "Try the Boat Tours, Take the Water Taxi, Stroll along the Charles De Gaulle Bridge, Visit Castle Veves",
       spring: "Citadel of Dinant, Dinant Adventure, Parc de Furfooz",
-      autumn: "Notre Dame de Dinant, Drive along river Meuse, Les Jardins d'Annevoie",
+      autumn: "Explore Notre Dame de Dinant, Take a drive along river Meuse, Day trip to Les Jardins d'Annevoie",
       url: "https://live.staticflickr.com/3682/9316877516_19d337932b_b.jpg"
     }
   ];

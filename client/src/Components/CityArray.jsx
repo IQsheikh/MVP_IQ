@@ -42,9 +42,7 @@ export default cityArray; */
 import React, { useState } from 'react';
 import cities from './Cities';
 import './CityArray.css';
-import CityDetails from './CityDetails';
 import { useNavigate } from 'react-router-dom';
-import SeasonDetails from './SeasonalActivities'
 
 function cityArray(city) {
 
@@ -73,7 +71,6 @@ function cityArray(city) {
           </div>
     <img src={city.url} className="city-image" alt={city.name} /> 
     <button onClick={() => handleCityDetailsClick(city)}>More Details</button> 
-    
        </div>
       ))};
 
