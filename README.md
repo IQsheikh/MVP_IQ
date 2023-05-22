@@ -12,4 +12,5 @@ The app consists of 4 components.
 All of these files are taking their information from a JS file which has an array of objects:  Cities.JS.
 You can see the flow diagram in the attached image below: 
 
-![MVPimage](MVP image.jpg)
+
+![MVPimage](MVPimage.jpg)
