@@ -28,7 +28,7 @@ const cities = [
         
         autumn: [
                   "https://riginov.com/uploads/images/content/riginov-education-and-guidance-city-of-antwerp-rubens-house.jpg",
-                  "https://inspiratie.odierbaarbelgie.be/wp-content/uploads/2020/02/odb_antwerpen_120220_0387.jpg",
+                  "https://visit.antwerpen.be/assets-proxy/53b1a3c6-d83f-4984-b302-e9ad729e2b82",
                   "https://www.steden.net/wp-content/uploads/2013/08/stadsfeestzaal.jpg,",
         ],
       },
@@ -37,7 +37,7 @@ const cities = [
       summer: "See the Antwerpen Central Station, visit Antwerpen Zoo, Stroll to Het Steen",
       spring: "Shop at De Meir, See the historic St Anna's Tunnel, Walk at Het Steen",
       autumn: "Visit Reubens Huis, See Red Star Line Museum, Relax at Stadsfeestzaal",
-      url: "https://th.bing.com/th/id/R.fd8967ad642c4000ef3e74aaf3b7ab72?rik=L0VpseWOC5RDRA&pid=ImgRaw&r=0"
+      url: "https://visit.antwerpen.be/assets-proxy/560b2938-bdd8-4d27-b1c3-a6a5654b7230"
     },
 
     {
@@ -147,7 +147,7 @@ const cities = [
                  [
                   "https://pivotweb.tourismewallonie.be/PivotWeb-3.1/img/OTH-A0-0069-20A5;w=825",
                   "https://cf.bstatic.com/images/hotel/max1024x768/374/374160646.jpg",
-                  "https://ardennen.nl/wp-content/uploads/2018/07/Charles-de-Gaulle-Brug-in-Dinant.jpg",
+                  "https://www.wayfaringwithwagner.com/wp-content/uploads/2017/07/dinant-belgium-wayfaring-with-wagner-32.jpg",
                   "https://chateau-veves.be/wp-content/uploads/2020/07/chaeau_veves.jpg"
                  ],
          spring:
